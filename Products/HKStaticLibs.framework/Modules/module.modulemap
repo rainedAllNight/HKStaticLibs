@@ -1,0 +1,6 @@
+framework module HKStaticLibs {
+  umbrella header "HKStaticLibs.h"
+
+  export *
+  module * { export * }
+}
