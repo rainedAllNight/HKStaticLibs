@@ -4,8 +4,8 @@ Pod::Spec.new do |s|
 
 
   s.name         = "HKStaticLibs"
-  s.version      = "0.0.1"
-  s.summary      = "好慷组件化使用到的第三方静态库"
+  s.version      = "0.0.2"
+  s.summary      = "好慷组件化使用到的第三方静态库.."
   s.description  = "好慷组件化使用到的第三方静态库"
 
   s.homepage     = "http://www.homeking365.com"
@@ -20,12 +20,12 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/rainedAllNight/HKStaticLibs", :tag => "#{s.version}" }
   s.source_files  =  "HKStaticLibs/**/*.{h,m}", '*.framework'
   s.framework = 'SystemConfiguration','CoreGraphics','CoreTelephony'
-  s.module_name = 'HKStaticLibs'
+  # s.module_name = 'HKStaticLibs'
   
   s.vendored_libraries = "HKStaticLibs/UMSocial/**/*.{a}"
   # s.vendored_frameworks = 'Products/HKStaticLibs.framework'
   s.vendored_frameworks = ['HKStaticLibs/UMSocial/UMSocialUI/UShareUI.framework', 'HKStaticLibs/UMSocial/UMSocialSDK/UMSocialCore.framework', 'HKStaticLibs/UMSocial/UMSocialSDK/UMSocialNetwork.framework']
   s.libraries = 'z','c++','sqlite3'
-  #spec.user_target_xcconfig =   {'OTHER_LDFLAGS' => ['-lObjC','-all_load']}
+  # spec.user_target_xcconfig =   {'OTHER_LDFLAGS' => ['-lObjC','-all_load']}
 
 end
