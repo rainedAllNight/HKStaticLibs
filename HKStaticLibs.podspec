@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
   s.source_files  =  "HKStaticLibs/**/*.{h,m}", '*.framework'
   s.framework = 'SystemConfiguration','CoreGraphics','CoreTelephony'
   s.module_name = 'HKStaticLibs'
-  # s.libraries = 'libz','libc++','libsqlite3', 'z'
-  # s.vendored_libraries = "HKStaticLibs/UMSocail/**/*.{a}"
+  
+  s.vendored_libraries = "HKStaticLibs/UMSocial/**/*.{a}"
   # s.vendored_frameworks = 'Products/HKStaticLibs.framework'
-  s.vendored_frameworks = ['HKStaticLibs/UMSocail/UMSocailUI/UMShareUI.framework', 'HKStaticLibs/UMSocail/UMSocailSDK/UMSocailCore.framework', 'HKStaticLibs/UMSocail/UMSocailSDK/UMSocailNetwork.framework']
-
+  s.vendored_frameworks = ['HKStaticLibs/UMSocial/UMSocialUI/UShareUI.framework', 'HKStaticLibs/UMSocial/UMSocialSDK/UMSocialCore.framework', 'HKStaticLibs/UMSocial/UMSocialSDK/UMSocialNetwork.framework']
+  s.libraries = 'z','c++','sqlite3'
   #spec.user_target_xcconfig =   {'OTHER_LDFLAGS' => ['-lObjC','-all_load']}
 
 end
