@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "HKStaticLibs"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "好慷组件化使用到的第三方静态库.."
   s.description  = "好慷组件化使用到的第三方静态库"
 
@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
   s.framework = 'SystemConfiguration','CoreGraphics','CoreTelephony'
   # s.module_name = 'HKStaticLibs'
   
-  s.vendored_libraries = "HKStaticLibs/UMSocial/**/*.{a}"
+  # s.vendored_libraries = "HKStaticLibs/UMSocial/**/*.{a}"
   # s.vendored_frameworks = 'Products/HKStaticLibs.framework'
   s.vendored_frameworks = ['HKStaticLibs/UMSocial/UMSocialUI/UShareUI.framework', 'HKStaticLibs/UMSocial/UMSocialSDK/UMSocialCore.framework', 'HKStaticLibs/UMSocial/UMSocialSDK/UMSocialNetwork.framework']
   s.libraries = 'z','c++','sqlite3'
