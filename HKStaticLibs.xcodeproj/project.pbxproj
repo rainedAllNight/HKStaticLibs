@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		EA728B881F09EE2900D46919 /* HKStaticLibs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA728B7E1F09EE2900D46919 /* HKStaticLibs.framework */; };
 		EA728B8D1F09EE2900D46919 /* HKStaticLibsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA728B8C1F09EE2900D46919 /* HKStaticLibsTests.swift */; };
-		EA728B8F1F09EE2900D46919 /* HKStaticLibs.h in Headers */ = {isa = PBXBuildFile; fileRef = EA728B811F09EE2900D46919 /* HKStaticLibs.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EA728BB51F09EE4100D46919 /* libSocialQQ.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EA728B9B1F09EE4100D46919 /* libSocialQQ.a */; };
 		EA728BB61F09EE4100D46919 /* UMSocialQQHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = EA728B9C1F09EE4100D46919 /* UMSocialQQHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EA728BB71F09EE4100D46919 /* libSocialSina.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EA728B9E1F09EE4100D46919 /* libSocialSina.a */; };
@@ -20,7 +19,6 @@
 		EA728BBC1F09EE4100D46919 /* UMSocialWechatHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = EA728BA51F09EE4100D46919 /* UMSocialWechatHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EA728BBD1F09EE4100D46919 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EA728BA71F09EE4100D46919 /* libWeChatSDK.a */; };
 		EA728BBE1F09EE4100D46919 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = EA728BA81F09EE4100D46919 /* README.txt */; };
-		EA728BBF1F09EE4100D46919 /* WechatAuthSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = EA728BA91F09EE4100D46919 /* WechatAuthSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EA728BC01F09EE4100D46919 /* WXApi.h in Headers */ = {isa = PBXBuildFile; fileRef = EA728BAA1F09EE4100D46919 /* WXApi.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EA728BC11F09EE4100D46919 /* WXApiObject.h in Headers */ = {isa = PBXBuildFile; fileRef = EA728BAB1F09EE4100D46919 /* WXApiObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EA728BC21F09EE4100D46919 /* UMSocialCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA728BAD1F09EE4100D46919 /* UMSocialCore.framework */; };
@@ -28,13 +26,14 @@
 		EA728BC41F09EE4100D46919 /* UMSocialSDKPromptResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EA728BAF1F09EE4100D46919 /* UMSocialSDKPromptResources.bundle */; };
 		EA728BC51F09EE4100D46919 /* libUMSocialLog.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EA728BB11F09EE4100D46919 /* libUMSocialLog.a */; };
 		EA728BC61F09EE4100D46919 /* UMSocialSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EA728BB31F09EE4100D46919 /* UMSocialSDKResources.bundle */; };
-		EA728BC71F09EE4100D46919 /* UShareUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA728BB41F09EE4100D46919 /* UShareUI.framework */; };
+		EA728BC71F09EE4100D46919 /* UShareUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA728BB41F09EE4100D46919 /* UShareUI.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		EA728BCA1F09EE8F00D46919 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA728BC91F09EE8F00D46919 /* CoreGraphics.framework */; };
 		EA728BCC1F09EEA800D46919 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EA728BCB1F09EEA800D46919 /* libsqlite3.tbd */; };
 		EA728BCE1F09EEAF00D46919 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA728BCD1F09EEAF00D46919 /* SystemConfiguration.framework */; };
 		EA728BD01F09EEBB00D46919 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA728BCF1F09EEBB00D46919 /* CoreTelephony.framework */; };
 		EA728BD21F09EED700D46919 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EA728BD11F09EED700D46919 /* libc++.tbd */; };
 		EA728BD41F09EEE300D46919 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EA728BD31F09EEE300D46919 /* libz.tbd */; };
+		EA728BD81F0A265600D46919 /* HKStaticLibs.h in Headers */ = {isa = PBXBuildFile; fileRef = EA728B811F09EE2900D46919 /* HKStaticLibs.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -271,14 +270,13 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA728BD81F0A265600D46919 /* HKStaticLibs.h in Headers */,
 				EA728BB81F09EE4100D46919 /* UMSocialSinaHandler.h in Headers */,
 				EA728BBC1F09EE4100D46919 /* UMSocialWechatHandler.h in Headers */,
 				EA728BC01F09EE4100D46919 /* WXApi.h in Headers */,
 				EA728BC11F09EE4100D46919 /* WXApiObject.h in Headers */,
 				EA728BB61F09EE4100D46919 /* UMSocialQQHandler.h in Headers */,
 				EA728BBA1F09EE4100D46919 /* UMSocialUniqueIdHandler.h in Headers */,
-				EA728B8F1F09EE2900D46919 /* HKStaticLibs.h in Headers */,
-				EA728BBF1F09EE4100D46919 /* WechatAuthSDK.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,6 +333,7 @@
 					EA728B7D1F09EE2900D46919 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = YVG6KC69KQ;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					EA728B861F09EE2900D46919 = {
@@ -529,6 +528,8 @@
 		EA728B931F09EE2900D46919 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = YVG6KC69KQ;
@@ -542,6 +543,7 @@
 				);
 				INFOPLIST_FILE = HKStaticLibs/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -552,10 +554,14 @@
 					"$(PROJECT_DIR)/HKStaticLibs/UMSocial/SocialLibraries/WeChat/WechatSDK",
 					"$(PROJECT_DIR)/HKStaticLibs/UMSocial/UMSocialSDKPlugin",
 				);
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.HomeKing.HKStaticLibs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -563,6 +569,8 @@
 		EA728B941F09EE2900D46919 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = YVG6KC69KQ;
@@ -576,6 +584,7 @@
 				);
 				INFOPLIST_FILE = HKStaticLibs/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -586,7 +595,10 @@
 					"$(PROJECT_DIR)/HKStaticLibs/UMSocial/SocialLibraries/WeChat/WechatSDK",
 					"$(PROJECT_DIR)/HKStaticLibs/UMSocial/UMSocialSDKPlugin",
 				);
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.HomeKing.HKStaticLibs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -597,6 +609,7 @@
 		EA728B961F09EE2900D46919 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = YVG6KC69KQ;
 				INFOPLIST_FILE = HKStaticLibsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -609,6 +622,7 @@
 		EA728B971F09EE2900D46919 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = YVG6KC69KQ;
 				INFOPLIST_FILE = HKStaticLibsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -637,6 +651,7 @@
 				EA728B941F09EE2900D46919 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EA728B951F09EE2900D46919 /* Build configuration list for PBXNativeTarget "HKStaticLibsTests" */ = {
 			isa = XCConfigurationList;
@@ -645,6 +660,7 @@
 				EA728B971F09EE2900D46919 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

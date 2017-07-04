@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-//#import "UMSocialCore/UMSocialCore.h"
-//#import "UShareUI/UShareUI.h"
+//#import <UMSocialCore/UMSocialCore.h>
+//#import <UShareUI/UShareUI.h>
 //! Project version number for HKStaticLibs.
-#import "UShareUIhdddfff"
+#import "WXApi.h"
+//#import "UMSocialWechatHandler.h"
+//#import "UMSocialCore/UMSocailCore.h"
 FOUNDATION_EXPORT double HKStaticLibsVersionNumber;
 
 //! Project version string for HKStaticLibs.

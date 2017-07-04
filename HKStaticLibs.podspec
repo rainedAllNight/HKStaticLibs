@@ -18,9 +18,14 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.source       = { :git => "https://github.com/rainedAllNight/HKStaticLibs", :tag => "#{s.version}" }
-  s.source_files  =  "Products/**/*.{h,m}"
-  # s.exclude_files = "Classes/Exclude"
+  s.source_files  =  "HKStaticLibs/**/*.{h,m}", '*.framework'
+  s.framework = 'SystemConfiguration','CoreGraphics','CoreTelephony'
+  s.module_name = 'HKStaticLibs'
+  # s.libraries = 'libz','libc++','libsqlite3', 'z'
+  # s.vendored_libraries = "HKStaticLibs/UMSocail/**/*.{a}"
+  # s.vendored_frameworks = 'Products/HKStaticLibs.framework'
+  s.vendored_frameworks = ['HKStaticLibs/UMSocail/UMSocailUI/UMShareUI.framework', 'HKStaticLibs/UMSocail/UMSocailSDK/UMSocailCore.framework', 'HKStaticLibs/UMSocail/UMSocailSDK/UMSocailNetwork.framework']
 
-  s.vendored_frameworks = 'Products/HKStaticLibs.framework'
+  #spec.user_target_xcconfig =   {'OTHER_LDFLAGS' => ['-lObjC','-all_load']}
 
 end
